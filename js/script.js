@@ -18,8 +18,7 @@ financeForm.addEventListener('submit', (e) => {
         amount -= changeAmount;
     }
 
-    // financeAmount.textContent = `${amount.toLocaleString()} ₽`;
-    console.log(`${amount.toLocaleString()} ₽`);
+    financeAmount.textContent = `${amount.toLocaleString()} ₽`;
 });
 
 financeReportBtn.addEventListener('click', () => {
