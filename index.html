@@ -5,7 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="css/cdnjs.cloudflare.com_ajax_libs_overlayscrollbars_2.4.4_styles_overlayscrollbars.min.css"
+          rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!--  фавикон  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest" crossorigin="use-credentials">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <script src="js/script.js" type="module"></script>
 
@@ -13,10 +24,11 @@
 </head>
 
 <body>
-<h1 class="visually-hidden">Сохрани свои деньги, зарабатывай и трать их с
-    умом, а мы поможем это контролировать</h1>
 <section class="finance ">
+    <h1 class="visually-hidden">Сохрани свои деньги, зарабатывай и трать их с
+        умом, а мы поможем это контролировать</h1>
     <div class="container">
+
         <header class="finance__header">
             <img class="finance__logo" src="./img/logo.png" alt="Логотип MoneySafe">
             <button class="finance__report">Отчет</button>
@@ -75,19 +87,19 @@
             <div class="container report__container">
                 <h2 class="report__title">Отчет</h2>
 
-                <div class="report__dates">
+                <form class="report__dates">
                     <div class="report__date">
                         <label for="start-date">Начало периода</label>
-                        <input type="date" id="start-date">
+                        <input type="date" id="start-date" name="startDate">
                     </div>
 
                     <div class="report__date">
                         <label for="end-date">Конец периода</label>
-                        <input type="date" id="end-date">
+                        <input type="date" id="end-date" name="endDate">
                     </div>
 
                     <button class="report__button">Показать</button>
-                </div>
+                </form>
 
                 <table class="report__table">
                     <thead>
@@ -102,45 +114,8 @@
                     </tr>
                     </thead>
 
-                    <tbody>
-                    <tr class="report__row">
-                        <td class="report__cell">Продукты питания</td>
-                        <td class="report__cell">1000</td>
-                        <td class="report__cell">Магазин Spar</td>
-                        <td class="report__cell">01.01.2021</td>
-                        <td class="report__cell">расход</td>
-                        <td class="report__action-cell">
-                            <button
-                                    class="report__button report__button_table">&#10006;
-                            </button>
-                        </td>
-                    </tr>
+                    <tbody class="report__operation-list">
 
-                    <tr class="report__row">
-                        <td class="report__cell">Продукты питания</td>
-                        <td class="report__cell">1000</td>
-                        <td class="report__cell">Магазин Spar</td>
-                        <td class="report__cell">01.01.2021</td>
-                        <td class="report__cell">расход</td>
-                        <td class="report__action-cell">
-                            <button
-                                    class="report__button report__button_table">&#10006;
-                            </button>
-                        </td>
-                    </tr>
-
-                    <tr class="report__row">
-                        <td class="report__cell">Продукты питания</td>
-                        <td class="report__cell">1000</td>
-                        <td class="report__cell">Магазин Spar</td>
-                        <td class="report__cell">01.01.2021</td>
-                        <td class="report__cell">расход</td>
-                        <td class="report__action-cell">
-                            <button
-                                    class="report__button report__button_table">&#10006;
-                            </button>
-                        </td>
-                    </tr>
                     </tbody>
                 </table>
 
