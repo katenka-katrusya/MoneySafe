@@ -25,7 +25,7 @@ body {
     font-size: 20px;
     line-height: 1.21;
     color: #000;
-    background: #9fa7ff url("../img/bg.jpg");
+    background: #9fa7ff url("../img/bg-size-mini.jpg");
     display: flex;
 }
 
@@ -118,6 +118,7 @@ fieldset {
 .finance__report {
     border-radius: 60px;
     border: 2px solid transparent;
+    width: 150px;
     background-color: #0038ff;
     color: #ffffff;
     padding: 12px 32px;
@@ -177,22 +178,19 @@ fieldset {
 }
 
 .report {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     max-height: 560px;
     overflow-y: auto;
     width: 94%;
     background-color: #ffffff;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 30px;
-}
-
-.report__open {
-    display: flex;
 }
 
 .report__container {

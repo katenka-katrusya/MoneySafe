@@ -18,6 +18,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="js/script.js" type="module"></script>
 
     <title>MoneySafe</title>
@@ -104,12 +105,12 @@
                 <table class="report__table">
                     <thead>
                     <tr>
-                        <th class="report__header-cell">Категория</th>
-                        <th class="report__header-cell">Сумма</th>
-                        <th class="report__header-cell">Описание</th>
-                        <th class="report__header-cell">Дата</th>
-                        <th class="report__header-cell">Действие</th>
-                        <th class="report__header-cell"></th>
+                        <th class="report__header-cell" data-sort="category" data-dir="up">Категория</th>
+                        <th class="report__header-cell" data-sort="amount" data-dir="up">Сумма</th>
+                        <th class="report__header-cell" data-sort="description" data-dir="up">Описание</th>
+                        <th class="report__header-cell" data-sort="date" data-dir="up">Дата</th>
+                        <th class="report__header-cell" data-sort="type" data-dir="up">Действие</th>
+                        <th class="report__header-cell" data-sort=""></th>
                         <!-- Пустая ячейка для симметрии -->
                     </tr>
                     </thead>
